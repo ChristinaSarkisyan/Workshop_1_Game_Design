@@ -1,6 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"spr_island3","path":"sprites/spr_island3/spr_island3.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"spr_island1","path":"sprites/spr_island1/spr_island1.yy",},"order":2,},
+    {"id":{"name":"spr_island2","path":"sprites/spr_island2/spr_island2.yy",},"order":3,},
     {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},"order":1,},
     {"id":{"name":"spr_plane","path":"sprites/spr_plane/spr_plane.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
