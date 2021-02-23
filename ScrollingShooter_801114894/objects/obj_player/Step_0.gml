@@ -44,4 +44,11 @@ if(obj_player.canShoot == true  &&  keyboard_check_pressed(vk_space) == true)
 	obj_player.canShoot = false;
 	
 	}
+
+	/// @DnDAction : YoYo Games.Instances.Set_Alarm
+	/// @DnDVersion : 1
+	/// @DnDHash : 38916615
+	/// @DnDParent : 489F30C4
+	/// @DnDArgument : "steps" "room_speed / 2"
+	alarm_set(0, room_speed / 2);
 }
