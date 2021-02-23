@@ -22,4 +22,14 @@ if(l451A5010_0)
 	/// @DnDArgument : "mincol" "$FF0000FF"
 	/// @DnDArgument : "maxcol" "$FF00FF00"
 	draw_healthbar(8, 8, 256, 32, obj_player.hp, $FF000000 & $FFFFFF, $FF0000FF & $FFFFFF, $FF00FF00 & $FFFFFF, 0, (($FF000000>>24) != 0), (($FF000000>>24) != 0));
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 3047E496
+	/// @DnDParent : 451A5010
+	/// @DnDArgument : "x" "16"
+	/// @DnDArgument : "y" "64"
+	/// @DnDArgument : "caption" ""
+	/// @DnDArgument : "var" ""Score: " + string(points)"
+	draw_text(16, 64,  + string("Score: " + string(points)));
 }
