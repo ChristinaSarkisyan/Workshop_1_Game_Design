@@ -1,6 +1,6 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
-/// @DnDHash : 1AC6FE1A
+/// @DnDHash : 77B30C9A
 /// @DnDArgument : "code" "$(13_10)//code provided by Dr.Bahamon$(13_10)event_inherited()$(13_10)vspeed += self.extraSpeed"
 
 //code provided by Dr.Bahamon
