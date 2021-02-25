@@ -1,13 +1,13 @@
-/// @DnDAction : YoYo Games.Common.If_Undefined
+/// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
-/// @DnDHash : 1F3314C8
-/// @DnDArgument : "var" "obj_player"
-if(obj_player == undefined)
+/// @DnDHash : 103FC96D
+/// @DnDArgument : "expr" "obj_enemybullet2.target_exists == false"
+if(obj_enemybullet2.target_exists == false)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 39020F30
-	/// @DnDParent : 1F3314C8
+	/// @DnDParent : 103FC96D
 	/// @DnDArgument : "expr" "270"
 	/// @DnDArgument : "var" "self.direction"
 	self.direction = 270;
