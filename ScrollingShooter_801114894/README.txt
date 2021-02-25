@@ -1,1 +1,1 @@
-add to enemy bullet 2 object step so that  it follows the player
+clamp plane 3 bulet rotation
