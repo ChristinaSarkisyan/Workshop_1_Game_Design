@@ -1,7 +1,37 @@
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+/// @DnDVersion : 1
+/// @DnDHash : 2F010EF3
+/// @DnDArgument : "key" "vk_up"
+/// @DnDArgument : "not" "1"
+var l2F010EF3_0;
+l2F010EF3_0 = keyboard_check(vk_up);
+if (!l2F010EF3_0)
+{
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+	/// @DnDVersion : 1
+	/// @DnDHash : 42BABEB7
+	/// @DnDParent : 2F010EF3
+	/// @DnDArgument : "key" "vk_down"
+	/// @DnDArgument : "not" "1"
+	var l42BABEB7_0;
+	l42BABEB7_0 = keyboard_check(vk_down);
+	if (!l42BABEB7_0)
+	{
+		/// @DnDAction : YoYo Games.Movement.Set_Speed
+		/// @DnDVersion : 1
+		/// @DnDHash : 4228E63F
+		/// @DnDParent : 42BABEB7
+		/// @DnDArgument : "speed" "-sign(vspeed)"
+		/// @DnDArgument : "speed_relative" "1"
+		/// @DnDArgument : "type" "2"
+		vspeed += -sign(vspeed);
+	}
+}
+
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 36B86038
-/// @DnDArgument : "code" "$(13_10)//section about keeping player in the room$(13_10)x = clamp(x, sprite_width/2, room_width-sprite_width/2)$(13_10)//above code provided in instructions by Dr. Bahamon$(13_10)y = clamp(y, sprite_height/2, room_height-sprite_height/2)$(13_10)//above code provided in instructions by Dr. Bahamon $(13_10)//(with very slight alterations by Chris s/ -- changed width to height)$(13_10)$(13_10)$(13_10)//section about the bullet firing$(13_10)//if (obj_player.canShoot == true  &&  keyboard_check_pressed(vk_space) == true )$(13_10)//{$(13_10)//	bul = instance_create(obj_player.x, obj_player.y, obj_playerBullet)	$(13_10)//}"
+/// @DnDArgument : "code" "$(13_10)//section about keeping player in the room$(13_10)x = clamp(x, sprite_width/2, room_width-sprite_width/2)$(13_10)//above code provided in instructions by Dr. Bahamon$(13_10)y = clamp(y, sprite_height/2, room_height-sprite_height/2)$(13_10)//above code provided in instructions by Dr. Bahamon $(13_10)//(with very slight alterations by Chris s/ -- changed width to height)$(13_10)$(13_10)$(13_10)"
 
 //section about keeping player in the room
 x = clamp(x, sprite_width/2, room_width-sprite_width/2)
@@ -9,13 +39,6 @@ x = clamp(x, sprite_width/2, room_width-sprite_width/2)
 y = clamp(y, sprite_height/2, room_height-sprite_height/2)
 //above code provided in instructions by Dr. Bahamon 
 //(with very slight alterations by Chris s/ -- changed width to height)
-
-
-//section about the bullet firing
-//if (obj_player.canShoot == true  &&  keyboard_check_pressed(vk_space) == true )
-//{
-//	bul = instance_create(obj_player.x, obj_player.y, obj_playerBullet)	
-//}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
