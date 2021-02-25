@@ -29,9 +29,9 @@ if(self.canShoot == true)
 	/// @DnDParent : 335B6E6A
 	/// @DnDArgument : "xpos_relative" "1"
 	/// @DnDArgument : "ypos_relative" "1"
-	/// @DnDArgument : "objectid" "obj_enemybullet1"
+	/// @DnDArgument : "objectid" "self.shotType"
 	/// @DnDSaveInfo : "objectid" "obj_enemybullet1"
-	instance_create_layer(x + 0, y + 0, "Instances", obj_enemybullet1);
+	instance_create_layer(x + 0, y + 0, "Instances", self.shotType);
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -45,5 +45,6 @@ if(self.canShoot == true)
 	/// @DnDVersion : 1
 	/// @DnDHash : 74F34668
 	/// @DnDParent : 335B6E6A
-	alarm_set(0, 30);
+	/// @DnDArgument : "steps" "shotInterval"
+	alarm_set(0, shotInterval);
 }
