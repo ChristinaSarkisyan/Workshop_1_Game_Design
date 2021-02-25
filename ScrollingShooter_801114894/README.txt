@@ -1,1 +1,1 @@
-6C -- need make step in obj_ player check for everything before it checks if hp is 0 and kills the player
+add to enemy bullet 2 object step so that  it follows the player
