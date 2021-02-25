@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 2F72AE5E
+/// @DnDArgument : "function" "set_position"
+set_position();
+
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 1AC6FE1A

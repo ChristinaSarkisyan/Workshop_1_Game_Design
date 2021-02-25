@@ -21,6 +21,7 @@
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},"order":5,},
     {"id":{"name":"obj_playerBullet","path":"objects/obj_playerBullet/obj_playerBullet.yy",},"order":8,},
     {"id":{"name":"spr_enemybullet1","path":"sprites/spr_enemybullet1/spr_enemybullet1.yy",},"order":10,},
+    {"id":{"name":"scr_set_position","path":"scripts/scr_set_position/scr_set_position.yy",},"order":1,},
     {"id":{"name":"spr_playerExplosion","path":"sprites/spr_playerExplosion/spr_playerExplosion.yy",},"order":7,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":5,},
     {"id":{"name":"spr_island2","path":"sprites/spr_island2/spr_island2.yy",},"order":3,},
