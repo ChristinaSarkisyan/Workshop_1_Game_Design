@@ -1,1 +1,1 @@
-current issue: part 1c is not working -- COME BACK TO IT LATER!!!!
+6C -- need make step in obj_ player check for everything before it checks if hp is 0 and kills the player

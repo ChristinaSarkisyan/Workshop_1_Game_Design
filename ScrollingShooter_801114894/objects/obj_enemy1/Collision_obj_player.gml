@@ -1,10 +1,9 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
-/// @DnDHash : 57BBD8A6
-/// @DnDArgument : "code" "obj_player.hp -= 30$(13_10)$(13_10)if (obj_player.hp <= 0) then instance_destroy(obj_player)"
-obj_player.hp -= 30
-
-if (obj_player.hp <= 0) then instance_destroy(obj_player)
+/// @DnDHash : 539B1CE0
+/// @DnDArgument : "function" "inflict_damage"
+/// @DnDArgument : "arg" "-30"
+inflict_damage(-30);
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

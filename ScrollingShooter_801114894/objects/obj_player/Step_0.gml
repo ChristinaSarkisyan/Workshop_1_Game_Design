@@ -1,33 +1,3 @@
-/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
-/// @DnDVersion : 1
-/// @DnDHash : 2F010EF3
-/// @DnDArgument : "key" "vk_up"
-/// @DnDArgument : "not" "1"
-var l2F010EF3_0;
-l2F010EF3_0 = keyboard_check(vk_up);
-if (!l2F010EF3_0)
-{
-	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
-	/// @DnDVersion : 1
-	/// @DnDHash : 42BABEB7
-	/// @DnDParent : 2F010EF3
-	/// @DnDArgument : "key" "vk_down"
-	/// @DnDArgument : "not" "1"
-	var l42BABEB7_0;
-	l42BABEB7_0 = keyboard_check(vk_down);
-	if (!l42BABEB7_0)
-	{
-		/// @DnDAction : YoYo Games.Movement.Set_Speed
-		/// @DnDVersion : 1
-		/// @DnDHash : 4228E63F
-		/// @DnDParent : 42BABEB7
-		/// @DnDArgument : "speed" "-sign(vspeed)"
-		/// @DnDArgument : "speed_relative" "1"
-		/// @DnDArgument : "type" "2"
-		vspeed += -sign(vspeed);
-	}
-}
-
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 36B86038
@@ -74,4 +44,47 @@ if(obj_player.canShoot == true  &&  keyboard_check_pressed(vk_space) == true)
 	/// @DnDParent : 489F30C4
 	/// @DnDArgument : "steps" "room_speed / 2"
 	alarm_set(0, room_speed / 2);
+}
+
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+/// @DnDVersion : 1
+/// @DnDHash : 2F010EF3
+/// @DnDArgument : "key" "vk_up"
+/// @DnDArgument : "not" "1"
+var l2F010EF3_0;
+l2F010EF3_0 = keyboard_check(vk_up);
+if (!l2F010EF3_0)
+{
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+	/// @DnDVersion : 1
+	/// @DnDHash : 42BABEB7
+	/// @DnDParent : 2F010EF3
+	/// @DnDArgument : "key" "vk_down"
+	/// @DnDArgument : "not" "1"
+	var l42BABEB7_0;
+	l42BABEB7_0 = keyboard_check(vk_down);
+	if (!l42BABEB7_0)
+	{
+		/// @DnDAction : YoYo Games.Movement.Set_Speed
+		/// @DnDVersion : 1
+		/// @DnDHash : 4228E63F
+		/// @DnDParent : 42BABEB7
+		/// @DnDArgument : "speed" "-sign(vspeed)"
+		/// @DnDArgument : "speed_relative" "1"
+		/// @DnDArgument : "type" "2"
+		vspeed += -sign(vspeed);
+	}
+}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 60721A9E
+/// @DnDArgument : "expr" "obj_player.hp <= 0"
+if(obj_player.hp <= 0)
+{
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 198A0835
+	/// @DnDParent : 60721A9E
+	instance_destroy();
 }
