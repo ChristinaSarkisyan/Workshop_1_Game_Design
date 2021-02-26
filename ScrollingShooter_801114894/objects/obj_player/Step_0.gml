@@ -82,18 +82,6 @@ if (!l2F010EF3_0)
 /// @DnDArgument : "expr" "obj_player.hp <= 0"
 if(obj_player.hp <= 0)
 {
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 27793D8A
-	/// @DnDApplyTo : {obj_enemybullet2}
-	/// @DnDParent : 60721A9E
-	/// @DnDArgument : "expr" "false"
-	/// @DnDArgument : "var" "obj_enemybullet2.target_exists"
-	with(obj_enemybullet2) {
-	obj_enemybullet2.target_exists = false;
-	
-	}
-
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 198A0835

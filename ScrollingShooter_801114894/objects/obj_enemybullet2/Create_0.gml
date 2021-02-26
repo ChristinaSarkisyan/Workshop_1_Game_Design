@@ -1,13 +1,17 @@
-/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 /// @DnDVersion : 1
-/// @DnDHash : 103FC96D
-/// @DnDArgument : "expr" "obj_enemybullet2.target_exists == false"
-if(obj_enemybullet2.target_exists == false)
+/// @DnDHash : 1995574F
+/// @DnDArgument : "obj" "obj_player"
+/// @DnDArgument : "not" "1"
+/// @DnDSaveInfo : "obj" "obj_player"
+var l1995574F_0 = false;
+l1995574F_0 = instance_exists(obj_player);
+if(!l1995574F_0)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 39020F30
-	/// @DnDParent : 103FC96D
+	/// @DnDParent : 1995574F
 	/// @DnDArgument : "expr" "270"
 	/// @DnDArgument : "var" "self.direction"
 	self.direction = 270;
